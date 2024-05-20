@@ -1,0 +1,77 @@
+[debug] [2024-04-25T10:56:14.386Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T10:56:14.390Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Eman Inventions\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-25T10:56:14.391Z] CLI Version:   13.7.4
+[debug] [2024-04-25T10:56:14.392Z] Platform:      win32
+[debug] [2024-04-25T10:56:14.392Z] Node Version:  v20.12.2
+[debug] [2024-04-25T10:56:14.392Z] Time:          Thu Apr 25 2024 15:56:14 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-04-25T10:56:14.392Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-25T10:56:14.410Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-25T10:56:14.412Z] > authorizing via signed-in user (emaninventions@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Eman Inventions\Desktop\signages_world
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-25T10:58:34.706Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-04-25T10:58:35.493Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-04-25T10:58:35.493Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project signage-world (signage world) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-04-25T10:58:55.117Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-25T10:58:55.117Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/signage-world
+[debug] [2024-04-25T10:58:56.926Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-25T10:58:56.927Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2024-04-25T10:58:56.928Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2024-04-25T10:58:56.928Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/signage-world
+[debug] [2024-04-25T10:58:58.839Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2024-04-25T10:58:58.839Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2024-04-25T10:59:08.840Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-04-25T10:59:08.841Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/signage-world
+[debug] [2024-04-25T10:59:10.451Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com 200
+[debug] [2024-04-25T10:59:10.451Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/signage-world/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-04-25T10:59:10.458Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signage-world [none]
+[debug] [2024-04-25T10:59:10.957Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signage-world 200
+[debug] [2024-04-25T10:59:10.958Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signage-world {"projectId":"signage-world","projectNumber":"108328820955","displayName":"signage world","name":"projects/signage-world","resources":{"hostingSite":"signage-world"},"state":"ACTIVE","etag":"1_654152c2-890d-494d-88c3-2c5d98c82e97"}
+[debug] [2024-04-25T11:00:38.009Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances databaseId=signage-world-default-rtdb&validateOnly=true
+[debug] [2024-04-25T11:00:38.010Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-04-25T11:00:39.858Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances 200
+[debug] [2024-04-25T11:00:39.858Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances {"name":"projects/108328820955/locations/us-central1/instances/signage-world-default-rtdb","project":"projects/108328820955","databaseUrl":"https://signage-world-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-04-25T11:00:39.860Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances databaseId=signage-world-default-rtdb
+[debug] [2024-04-25T11:00:39.861Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances {"type":"default_database"}
+[debug] [2024-04-25T11:00:40.504Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances 200
+[debug] [2024-04-25T11:00:40.504Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/signage-world/locations/us-central1/instances {"name":"projects/108328820955/locations/us-central1/instances/signage-world-default-rtdb","project":"projects/108328820955","databaseUrl":"https://signage-world-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-04-25T11:00:45.921Z] >>> [apiv2][query] GET https://signage-world-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2024-04-25T11:00:46.995Z] <<< [apiv2][status] GET https://signage-world-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2024-04-25T11:00:46.996Z] <<< [apiv2][body] GET https://signage-world-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for signage-world-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+[info] i  Writing configuration info to firebase.json... 
+[info] i  Writing project information to .firebaserc... 
+[info] i  Writing gitignore file to .gitignore... 
+[info] 
+[info] +  Firebase initialization complete! 
